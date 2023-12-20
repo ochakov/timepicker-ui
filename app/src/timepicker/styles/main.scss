@@ -187,8 +187,8 @@
   }
   &-tips-wrapper-24h {
     position: absolute;
-    height: 160px;
-    width: 160px;
+    height: 196px;
+    width: 196px;
     z-index: 0;
     transform: translate(-50%, -50%);
     left: 50%;
@@ -260,7 +260,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 51.2px;
+    font-size: 36px;
     background-color: #e4e4e4;
     border-radius: 7px;
     cursor: pointer;
@@ -268,7 +268,7 @@
     outline: none;
     border: 2px solid transparent;
     padding: 10px;
-    width: 96px;
+    width: 72px;
     text-align: center;
 
     &:focus-visible {
@@ -323,7 +323,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 57.6px;
+    font-size: 56px;
+    margin-top: -12px;
     user-select: none;
     touch-action: none;
   }
@@ -388,6 +389,7 @@
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
     border-bottom-width: calc(0.7504px / 2);
+    width: 54px;
   }
 
   &-am.mobile {
@@ -546,7 +548,7 @@
   }
 
   &-clock-hand-24h {
-    height: 23%;
+    height: 30%;
   }
 
   &-circle-hand {
@@ -556,8 +558,8 @@
     height: 4px;
     border-radius: 100%;
     transition: all 0.2s ease;
-    height: 46px;
-    width: 46px;
+    height: 40px;
+    width: 40px;
     box-sizing: border-box !important;
     background-color: $purple;
 

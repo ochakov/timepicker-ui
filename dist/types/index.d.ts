@@ -184,7 +184,7 @@ declare type OptionTypes = {
     delayHandler?: number;
 };
 
-declare type TypeFunction = () => void;
+type TypeFunction = () => void;
 declare class TimepickerUI {
     private _degreesHours;
     private _degreesMinutes;
@@ -233,7 +233,7 @@ declare class TimepickerUI {
      * @description The open method opens immediately timepicker after init
      * @param callback - The callback function triggered when timepicker is open by this method
      */
-    open: (callback?: (() => void) | undefined) => void;
+    open: (callback?: () => void) => void;
     /**
      * @description Closure method closes the timepicker with double parentheses
      * @param args - The first parentheses doesn't have any paremeters. The second parentheses accepts parameters and these parameters are optional in this method and order is any. You can set callback function first or boolean,
@@ -245,7 +245,7 @@ declare class TimepickerUI {
      * @description The destroy method destroy actual instance of picker by cloning element.
      * @param callback - The callback function is started after destroyed method. This parameter is optional.
      */
-    destroy: (callback?: TypeFunction | undefined) => void;
+    destroy: (callback?: TypeFunction) => void;
     /**
      * @description The update method which update timepicker with new options and can create a new instance.
      * @param value - The first parameter is a object with key options which is timepicker options and it will be updated to current
@@ -256,7 +256,7 @@ declare class TimepickerUI {
     update: (value: {
         options: OptionTypes;
         create?: boolean;
-    }, callback?: TypeFunction | undefined) => void;
+    }, callback?: TypeFunction) => void;
     private _preventClockTypeByCurrentTime;
     private _updateInputValueWithCurrentTimeOnStart;
     private _checkDisabledValuesOnStart;

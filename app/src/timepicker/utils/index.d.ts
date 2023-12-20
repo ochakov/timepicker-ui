@@ -6,7 +6,7 @@ export declare const typeCheckConfig: (componentName: string, config: {
 }, configTypes: {
     [x: string]: any;
 }) => void;
-export declare const getConfig: (options?: OptionTypes | undefined, defaultOptions?: Record<string, unknown> | undefined) => Record<string, unknown>;
+export declare const getConfig: (options?: OptionTypes, defaultOptions?: Record<string, unknown>) => Record<string, unknown>;
 export declare const getScrollbarWidth: () => number;
 export declare const getRadians: (el: number) => number;
 export declare const getClickTouchPosition: (event: TouchEvent, object: HTMLElement) => {
@@ -34,7 +34,7 @@ export declare const createNewEvent: (el: Element, eventName: string, value: {
 export declare const getBrowser: () => boolean;
 export declare const getIncrementTimes: (degrees: number, type: any, count: number) => number;
 export declare const createObjectFromData: (obj: OptionTypes) => any;
-export declare const range: (start?: string | number | undefined, stop?: string | number | undefined) => number[];
-export declare const reverseRange: (start?: string | number | undefined, stop?: string | number | undefined) => number[];
-export declare const initCallback: (callback?: (() => void) | undefined) => void;
+export declare const range: (start?: number | string, stop?: number | string) => number[];
+export declare const reverseRange: (start?: number | string, stop?: number | string) => number[];
+export declare const initCallback: (callback?: () => void) => void;
 export declare const timeConversion: (str?: string) => string;

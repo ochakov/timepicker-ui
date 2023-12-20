@@ -1,5 +1,5 @@
 import { OptionTypes } from './types';
-export declare const getInputValue: (el: HTMLInputElement, clockType?: string | undefined, currentTime?: OptionTypes['currentTime'], updateOptions?: boolean | undefined) => {
+export declare const getInputValue: (el: HTMLInputElement, clockType?: string, currentTime?: OptionTypes['currentTime'], updateOptions?: boolean) => {
     hour: string;
     minutes: string;
     type: string | undefined;

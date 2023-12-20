@@ -51,5 +51,5 @@ export declare const createDisabledTime: (options: any) => {
         removedPmHour?: undefined;
     };
 } | undefined;
-export declare const checkDisabledHoursAndMinutes: (value: (string | number)[] | string | number | undefined, type: 'hour' | 'minutes', clockType?: OptionTypes['clockType'], arrValue?: (string | number)[] | undefined) => boolean | undefined;
+export declare const checkDisabledHoursAndMinutes: (value: (string | number)[] | string | number | undefined, type: 'hour' | 'minutes', clockType?: OptionTypes['clockType'], arrValue?: (string | number)[]) => boolean | undefined;
 export declare const checkedDisabledValuesInterval: (hour?: any, minutes?: any, type?: any, interval?: any) => boolean;
